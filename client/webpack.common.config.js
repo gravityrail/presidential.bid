@@ -6,7 +6,7 @@ module.exports = {
 
   // the project dir
   context: __dirname,
-  entry: ['./assets/javascripts/App'],
+  entry: ['./assets/javascripts/Ballot'],
 
   // In case you wanted to load jQuery from the CDN, this is how you would do it:
   // externals: {
