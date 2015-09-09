@@ -1,28 +1,31 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Basic Setup
+1. Be sure that you have Node installed. I use [nvm](https://github.com/creationix/nvm), with node
+   version `v0.12.7`. See this article [Updating and using nvm](http://forum.railsonmaui.com/t/updating-and-using-nvm/293).
+1. `git clone git@github.com:gravityrail/presidential.bid.git`
+1. `cd presidential.bid`
+1. Check that you have Ruby 2.2.2
+1. Check that you're using the right version of node. Run `nvm list` to check.
+1. `bundle install`
+1. `npm install`
+1. `rake db:setup`
+1. `foreman start -f Procfile.dev`
+1. Open a browser tab to http://0.0.0.0:4000 for the Rail app example.
+1. Open a browser tab to http://0.0.0.0:3000 for the Hot Module Replacement Example.
 
-Things you may want to cover:
+# Javascript development without Rails using Hot Module Replacement (HMR)
 
-* Ruby version
+Setup node and run the node server with file `server.js`.
 
-* System dependencies
+```
+cd client
+node server.js
+```
 
-* Configuration
+Point your browser to http://0.0.0.0:3000.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Save a change to a JSX file and see it update immediately in the browser! Note,
+any browser state still exists, such as what you've typed in the comments box.
+That's totally different than [Live Reload](http://livereload.com/) which refreshes
+the browser.

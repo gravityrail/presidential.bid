@@ -1,0 +1,31 @@
+{
+  "name": "presidential.bid",
+  "version": "1.1.1",
+  "description": "The only social network where everyone is running for President",
+  "main": "server.js",
+  "engines": {
+    "node": "0.12.7"
+  },
+  "scripts": {
+    "postinstall": "cd ./client && npm install",
+    "gulp": "cd ./client && npm run gulp",
+    "test": "rspec && client/bin/lint && (cd client && npm run jscs .)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shakacode/react-webpack-rails-tutorial.git"
+  },
+  "keywords": [
+    "react",
+    "tutorial",
+    "comment",
+    "example"
+  ],
+  "author": "justin808",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shakacode/react-webpack-rails-tutorial/issues"
+  },
+  "homepage": "https://github.com/shakacode/react-webpack-rails-tutorial",
+  "dependencies": {}
+}

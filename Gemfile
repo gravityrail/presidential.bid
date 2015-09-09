@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -35,6 +35,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem "foreman"
 end
 
 group :development do
@@ -45,3 +46,13 @@ group :development do
   gem 'spring'
 end
 
+# customizations
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'haml-rails'
+gem 'react-rails'
+gem 'graphql', '~> 0.6'
+gem 'graphql-relay', '0.3.5'
+gem 'autoprefixer-rails'
+# gem 'omniauth-twitter'
