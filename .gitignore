@@ -18,6 +18,7 @@
 /public/assets
 client-bundle.js
 client-bundle.js.map
+app/assets/javascripts/generated/client-bundle.js
 .env
 node_modules
 npm-debug.log

@@ -9,10 +9,11 @@ QueryType = GraphQL::ObjectType.define do
 
   field :candidates do
     type types[CandidateType]
-    
+
     argument :parties, types[types.String], "candidate parties to include"
 
     resolve -> (object, arguments, context) {
+      Rails.logger.warn Candidate.pluck(:name)
       Candidate.order("created_at desc").all
     }
   end

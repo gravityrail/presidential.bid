@@ -10,7 +10,7 @@
 1. `bundle install`
 1. `npm install`
 1. `rake db:setup`
-1. `rake graph:dump_schema` - dump the graphql schema into db/schema.json. You'll want to do this each time the schema changes.
+1. `rake graphql:dump_schema` - dump the graphql schema into db/schema.json. You'll want to do this each time the schema changes.
 1. `foreman start -f Procfile.dev`
 1. Open a browser tab to http://0.0.0.0:4000 for the Rail app example.
 1. Open a browser tab to http://0.0.0.0:3000 for the Hot Module Replacement Example.

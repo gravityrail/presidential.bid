@@ -42,7 +42,7 @@ let CandidateList = React.createClass({
   // },
 
   render: function() {
-    console.log(this.props.candidates);
+    console.log(this.props);
     return (<ul>
       {
         this.props.candidates.map( function( candidate ) {
