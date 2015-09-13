@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   resources :candidates, only: [:index]
+  resources :queries
+  post 'graphql', to: "queries#create"
   root to: 'pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.
